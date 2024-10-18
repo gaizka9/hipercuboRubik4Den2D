@@ -121,7 +121,11 @@ if (visibilidad1 === "visible") {
 
         ///////////////////  ORIENTACION  ////////////////////////
 
-        if (event.shiftKey && (event.key === 'x' || event.key === 'X')) { 
+        if ((event.shiftKey && event.ctrlKey && (event.key === 'x' || event.key === 'X')) || (event.ctrlKey && (event.key === 'x' || event.key === 'X'))) {
+
+            console.log("hiper eje X")
+
+        }else if (event.shiftKey && (event.key === 'x' || event.key === 'X')) { 
 
             m1(); rp1(); l1();
 

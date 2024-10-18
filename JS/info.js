@@ -26,9 +26,9 @@ info.innerHTML = `
         <hr>
 
         <h2>Ejes 4D</h2>
-        <span>X: W + X</span><br>
-        <span>Y: W + Y</span><br>
-        <span>Z: W + Z</span>
+        <span>X: Ctrl + X</span><br>
+        <span>Y: Ctrl + Y</span><br>
+        <span>Z: Ctrl + Z</span>
 
         <hr>
 

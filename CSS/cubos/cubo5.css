@@ -49,7 +49,7 @@ td[data-color="T"]{
 }
 
 td[data-color="O"] {
-    background-color: #D3D3D3;
+    background-color: #ffa500;
 }
 
 td[data-color="S"] {
@@ -57,7 +57,7 @@ td[data-color="S"] {
 }
 
 td[data-color="GO"] {
-    background-color: #696969;
+    background-color: #94800e;
 }
 
 td[data-color="P"] {
