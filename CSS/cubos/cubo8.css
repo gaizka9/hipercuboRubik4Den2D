@@ -1,0 +1,69 @@
+#cubo8 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    gap: 10px;
+    /* Definimos las áreas de la cuadrícula */
+    grid-template-areas: 
+        "empty1 C empty2"
+        "empty3 V empty4"
+        "MO RD CO"
+        "empty5 GM empty6";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    visibility: visible;
+}
+
+/* Colocamos las tablas en las áreas correspondientes */
+.table-cian {
+    grid-area: C;
+}
+
+.table-violet {
+    grid-area: V;
+}
+
+.table-morado {
+    grid-area: MO;
+}
+
+.table-red-dark {
+    grid-area: RD;
+}
+
+.table-coral {
+    grid-area: CO;
+}
+
+.table-green-menta {
+    grid-area: GM;
+}
+
+
+td[data-color="C"]{
+    background-color: #84ffff;
+}
+
+td[data-color="V"] {
+    background-color: #8A2BE2;
+}
+
+td[data-color="MO"] {
+    background-color: #430050;
+}
+
+td[data-color="RD"] {
+    background-color: #8B0000;
+}
+
+td[data-color="CO"] {
+    background-color: #FF7F50;
+}
+
+td[data-color="GM"] {
+    background-color: #98FF98;
+}

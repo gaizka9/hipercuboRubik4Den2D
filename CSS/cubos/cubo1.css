@@ -1,0 +1,71 @@
+
+
+#cubo1 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    gap: 10px;
+    /* Definimos las áreas de la cuadrícula */
+    grid-template-areas: 
+        "empty1 Y empty2"
+        "empty3 R empty4"
+        "B W G"
+        "empty5 O empty6";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    visibility:visible;
+}
+
+/* Colocamos las tablas en las áreas correspondientes */
+.table-yellow {
+    grid-area: Y;
+}
+
+.table-red {
+    grid-area: R;
+}
+
+.table-white {
+    grid-area: W;
+}
+
+.table-blue {
+    grid-area: B;
+}
+
+.table-green {
+    grid-area: G;
+}
+
+.table-orange {
+    grid-area: O;
+}
+
+
+td[data-color="Y"]{
+    background-color: #ffff00;
+}
+
+td[data-color="R"] {
+    background-color: #ff0000;
+}
+
+td[data-color="B"] {
+    background-color: #0000ff;
+}
+
+td[data-color="W"] {
+    background-color: #ffffff;
+}
+
+td[data-color="G"] {
+    background-color: #008000;
+}
+
+td[data-color="O"] {
+    background-color: #ffa500;
+}

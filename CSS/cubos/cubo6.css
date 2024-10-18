@@ -1,0 +1,69 @@
+#cubo6 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    gap: 10px;
+    /* Definimos las áreas de la cuadrícula */
+    grid-template-areas: 
+        "empty1 PH empty2"
+        "empty3 GD empty4"
+        "G BS CO"
+        "empty5 P empty6";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    visibility: visible;
+}
+
+/* Colocamos las tablas en las áreas correspondientes */
+.table-pink-hard {
+    grid-area: PH;
+}
+
+.table-grey-dark {
+    grid-area: GD;
+}
+
+.table-green {
+    grid-area: G;
+}
+
+.table-blue-sea {
+    grid-area: BS;
+}
+
+.table-coral {
+    grid-area: CO;
+}
+
+.table-pink {
+    grid-area: P;
+}
+
+
+td[data-color="PH"]{
+    background-color: #FF1493;
+}
+
+td[data-color="GD"] {
+    background-color: #696969;
+}
+
+td[data-color="G"] {
+    background-color: #008000;
+}
+
+td[data-color="BS"] {
+    background-color: #000080;
+}
+
+td[data-color="CO"] {
+    background-color: #FF7F50;
+}
+
+td[data-color="P"] {
+    background-color: #FBC6C1;
+}

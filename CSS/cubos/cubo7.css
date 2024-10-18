@@ -1,0 +1,69 @@
+#cubo7 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    gap: 10px;
+    /* Definimos las áreas de la cuadrícula */
+    grid-template-areas: 
+        "empty1 L empty2"
+        "empty3 BR empty4"
+        "MO PS B"
+        "empty5 S empty6";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    visibility: visible;
+}
+
+/* Colocamos las tablas en las áreas correspondientes */
+.table-lima {
+    grid-area: L;
+}
+
+.table-brown {
+    grid-area: BR;
+}
+
+.table-morado {
+    grid-area: MO;
+}
+
+.table-pistacho {
+    grid-area: PS;
+}
+
+.table-blue {
+    grid-area: B;
+}
+
+.table-silver {
+    grid-area: S;
+}
+
+
+td[data-color="L"]{
+    background-color: #BFFF00;
+}
+
+td[data-color="BR"] {
+    background-color: #8B4513;
+}
+
+td[data-color="MO"] {
+    background-color: #430050;
+}
+
+td[data-color="PS"] {
+    background-color: #32CD32;
+}
+
+td[data-color="B"] {
+    background-color: #0000ff;
+}
+
+td[data-color="S"] {
+    background-color: #6d8f94;
+}

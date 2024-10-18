@@ -1,0 +1,69 @@
+#cubo5 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    gap: 10px;
+    /* Definimos las áreas de la cuadrícula */
+    grid-template-areas: 
+        "empty1 T empty2"
+        "empty3 O empty4"
+        "S GO P"
+        "empty5 GM empty6";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    visibility: visible;
+}
+
+/* Colocamos las tablas en las áreas correspondientes */
+.table-turkesa {
+    grid-area: T;
+}
+
+.table-orange {
+    grid-area: O;
+}
+
+.table-silver {
+    grid-area: S;
+}
+
+.table-gold {
+    grid-area: GO;
+}
+
+.table-pink {
+    grid-area: P;
+}
+
+.table-green-menta {
+    grid-area: GM;
+}
+
+
+td[data-color="T"]{
+    background-color: #00c4b0;
+}
+
+td[data-color="O"] {
+    background-color: #D3D3D3;
+}
+
+td[data-color="S"] {
+    background-color: #6d8f94;
+}
+
+td[data-color="GO"] {
+    background-color: #696969;
+}
+
+td[data-color="P"] {
+    background-color: #FBC6C1;
+}
+
+td[data-color="GM"] {
+    background-color: #98FF98;
+}
