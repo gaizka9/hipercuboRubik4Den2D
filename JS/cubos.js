@@ -109,11 +109,11 @@ celdas.forEach(celda => {
 });
 
 
-cubo1.style.visibility = "hidden";
+//cubo1.style.visibility = "hidden";
 cubo2.style.visibility = "hidden";
 cubo3.style.visibility = "hidden";
 cubo4.style.visibility = "hidden";
 cubo5.style.visibility = "hidden";
 cubo6.style.visibility = "hidden";
 cubo7.style.visibility = "hidden";
-//cubo8.style.visibility = "hidden";
+cubo8.style.visibility = "hidden";
