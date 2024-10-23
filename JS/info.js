@@ -34,3 +34,11 @@ info.innerHTML = `
 
         <h4>Inversa</h4>
         <span>Shift + Tecla</span><br>`;
+
+
+const cubos = document.getElementById('cubos')
+
+for (let i = 1; i < 9; i++) {
+
+        cubos.innerHTML += `<div id="cubo${i}"></div>`;
+}

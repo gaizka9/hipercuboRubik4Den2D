@@ -34,89 +34,76 @@ if (visibilidad1 === "visible") {
     console.log('cubo 1 Visible ')
     document.addEventListener('keydown', function(event) {
 
-        ///////////////////  CENTROS  ////////////////////////
+        if (event.shiftKey) { 
 
-        if (event.shiftKey && (event.key === 'm' || event.key === 'M')) { 
+            ///////////////////  CENTROS  ////////////////////////
+            if (event.shiftKey && (event.key === 'm' || event.key === 'M')) { 
 
-            mp1()
+                mp()
+            }else if (event.shiftKey && (event.key === 'e' || event.key === 'E')) { 
 
-        }else if (event.key === 'm' || event.key === 'M') { 
+                ep()     
+            }else if (event.shiftKey && (event.key === 's' || event.key === 'S')) { 
 
-            m1()
-        }
+                sp()
+            ///////////////////  LADOS  ////////////////////////
+            }else if (event.shiftKey && (event.key === 'r' || event.key === 'R')) { 
 
-        if (event.shiftKey && (event.key === 'e' || event.key === 'E')) { 
+                rp()
 
-            ep1()
+            }else if (event.shiftKey && (event.key === 'l' || event.key === 'L')) { 
 
-        }else if (event.key === 'e' || event.key === 'E') { 
+                lp()
 
-            e1()
-        }
+            }else if (event.shiftKey && (event.key === 'u' || event.key === 'U')) { 
 
-        if (event.shiftKey && (event.key === 's' || event.key === 'S')) { 
+                up()
 
-            sp1()
+            }else if (event.shiftKey && (event.key === 'd' || event.key === 'D')) { 
 
-        }else if (event.key === 's' || event.key === 'S') { 
+                dp()
 
-            s1()
-        }
+            }else if (event.shiftKey && (event.key === 'f' || event.key === 'F')) { 
 
-        ///////////////////  LADOS  ////////////////////////
+                fp()
 
-        if (event.shiftKey && (event.key === 'r' || event.key === 'R')) { 
+            }else if (event.shiftKey && (event.key === 'b' || event.key === 'B')) { 
 
-            rp1()
+                bp()
+            }
 
-        }else if (event.key === 'r' || event.key === 'R') { 
+        }else {
 
-            r1()
-        }
+            ///////////////////  CENTROS  ////////////////////////
+            if (event.key === 'm' || event.key === 'M') { 
 
-        if (event.shiftKey && (event.key === 'l' || event.key === 'L')) { 
+                m()
+            }else if (event.key === 'e' || event.key === 'E') { 
 
-            lp1()
+                e()
+            }else if (event.key === 's' || event.key === 'S') { 
 
-        }else if (event.key === 'l' || event.key === 'L') { 
+                s()
+            ///////////////////  LADOS  ////////////////////////
+            }else if (event.key === 'r' || event.key === 'R') { 
 
-            l1()
-        }
+                r()
+            }else if (event.key === 'l' || event.key === 'L') { 
 
-        if (event.shiftKey && (event.key === 'u' || event.key === 'U')) { 
+                l()
+            }else if (event.key === 'u' || event.key === 'U') { 
 
-            up1()
+                u()
+            }else if (event.key === 'd' || event.key === 'D') { 
 
-        }else if (event.key === 'u' || event.key === 'U') { 
+                d()
+            }else if (event.key === 'f' || event.key === 'F') { 
 
-            u1()
-        }
+                f()
+            }else if (event.key === 'b' || event.key === 'B') { 
 
-        if (event.shiftKey && (event.key === 'd' || event.key === 'D')) { 
-
-            dp1()
-
-        }else if (event.key === 'd' || event.key === 'D') { 
-
-            d1()
-        }
-
-        if (event.shiftKey && (event.key === 'f' || event.key === 'F')) { 
-
-            fp1()
-
-        }else if (event.key === 'f' || event.key === 'F') { 
-
-            f1()
-        }
-
-        if (event.shiftKey && (event.key === 'b' || event.key === 'B')) { 
-
-            bp1()
-            
-        }else if (event.key === 'b' || event.key === 'B') { 
-
-            b1()
+                b()
+            }
         }
 
         ///////////////////  ORIENTACION  ////////////////////////
@@ -127,11 +114,11 @@ if (visibilidad1 === "visible") {
 
         }else if (event.shiftKey && (event.key === 'x' || event.key === 'X')) { 
 
-            m1(); rp1(); l1();
+            m(); rp(); l();
 
         }else if (event.key === 'x' || event.key === 'X') { 
             
-            mp1(); r1(); lp1();
+            mp(); r(); lp();
         }
 
         if ((event.shiftKey && event.ctrlKey && (event.key === 'y' || event.key === 'Y')) || (event.ctrlKey && (event.key === 'y' || event.key === 'Y'))) {
@@ -140,11 +127,11 @@ if (visibilidad1 === "visible") {
 
         }else if (event.shiftKey && (event.key === 'y' || event.key === 'Y')) { 
             
-            e1(); up1(); d1();
+            e(); up(); d();
 
         }else if (event.key === 'y' || event.key === 'Y') { 
             
-            ep1(); u1(); dp1();
+            ep(); u(); dp();
         }
 
         if ((event.shiftKey && event.ctrlKey && (event.key === 'z' || event.key === 'Z')) || (event.ctrlKey && (event.key === 'z' || event.key === 'Z'))) {
@@ -153,11 +140,11 @@ if (visibilidad1 === "visible") {
 
         }else if (event.shiftKey && (event.key === 'z' || event.key === 'Z')) { 
             
-            sp1(); fp1(); b1();
+            sp(); fp(); b();
             
         }else if (event.key === 'z' || event.key === 'Z') { 
             
-            s1(); f1(); bp1();
+            s(); f(); bp();
         }
     });
 
@@ -165,7 +152,7 @@ if (visibilidad1 === "visible") {
     console.log('cubo 1 Oculto ')
 }
 
-function m1(){
+function m(){
     moverStickers('1-O-1-1', '1-W-1-1', '1-R-1-1', '1-Y-1-1') //mover centros
     moverStickers('1-O-0-1', '1-W-0-1', '1-R-0-1', '1-Y-0-1') //mover aristas
     moverStickers('1-O-2-1', '1-W-2-1', '1-R-2-1', '1-Y-2-1') //mover aristas
@@ -173,7 +160,7 @@ function m1(){
     espejoM()
 }
 
-function mp1() {
+function mp() {
     moverStickers('1-Y-1-1', '1-R-1-1', '1-W-1-1', '1-O-1-1') //mover centros
     moverStickers('1-Y-0-1', '1-R-0-1', '1-W-0-1', '1-O-0-1') //mover aristas
     moverStickers('1-Y-2-1', '1-R-2-1', '1-W-2-1', '1-O-2-1') //mover aristas
@@ -182,7 +169,7 @@ function mp1() {
 }
 
 
-function e1(){
+function e(){
     moverStickers('1-B-1-1', '1-Y-1-1', '1-G-1-1', '1-W-1-1') //mover centros
     moverStickers('1-B-1-2', '1-Y-1-0', '1-G-1-2', '1-W-1-2') //mover aristas
     moverStickers('1-B-1-0', '1-Y-1-2', '1-G-1-0', '1-W-1-0') //mover aristas
@@ -190,7 +177,7 @@ function e1(){
     espejoE()
 }
 
-function ep1(){
+function ep(){
     moverStickers('1-W-1-1', '1-G-1-1', '1-Y-1-1', '1-B-1-1') //mover centros
     moverStickers('1-W-1-2', '1-G-1-2', '1-Y-1-0', '1-B-1-2') //mover aristas
     moverStickers('1-W-1-0', '1-G-1-0', '1-Y-1-2', '1-B-1-0') //mover aristas
@@ -199,7 +186,7 @@ function ep1(){
 }
 
 
-function s1(){
+function s(){
     moverStickers('1-B-1-1', '1-O-1-1', '1-G-1-1', '1-R-1-1') //mover centros
     moverStickers('1-B-2-1', '1-O-1-2', '1-G-0-1', '1-R-1-0') //mover aristas
     moverStickers('1-B-0-1', '1-O-1-0', '1-G-2-1', '1-R-1-2') //mover aristas
@@ -207,7 +194,7 @@ function s1(){
     espejoS()
 }
 
-function sp1(){
+function sp(){
     moverStickers('1-R-1-1', '1-G-1-1', '1-O-1-1', '1-B-1-1') //mover centros
     moverStickers('1-R-1-0', '1-G-0-1', '1-O-1-2', '1-B-2-1') //mover aristas
     moverStickers('1-R-1-2', '1-G-2-1', '1-O-1-0', '1-B-0-1') //mover aristas
@@ -216,7 +203,7 @@ function sp1(){
 }
 
 
-function r1() {
+function r() {
     moverStickers('1-G-1-0', '1-G-2-1', '1-G-1-2', '1-G-0-1') //mover aristas
     moverStickers('1-G-2-0', '1-G-2-2', '1-G-0-2', '1-G-0-0') //mover esquinas
 
@@ -227,7 +214,7 @@ function r1() {
     espejoR()
 }
 
-function rp1() {
+function rp() {
     moverStickers('1-G-0-1', '1-G-1-2', '1-G-2-1', '1-G-1-0') //mover aristas
     moverStickers('1-G-0-0', '1-G-0-2', '1-G-2-2', '1-G-2-0') //mover esquinas
         
@@ -238,7 +225,7 @@ function rp1() {
     espejoR()
 }
 
-function l1() {
+function l() {
     moverStickers('1-B-1-0', '1-B-2-1', '1-B-1-2', '1-B-0-1') //mover aristas
     moverStickers('1-B-2-0', '1-B-2-2', '1-B-0-2', '1-B-0-0') //mover esquinas
 
@@ -249,7 +236,7 @@ function l1() {
     espejoL()
 }
 
-function lp1() {
+function lp() {
     moverStickers('1-B-0-1', '1-B-1-2', '1-B-2-1', '1-B-1-0') //mover aristas
     moverStickers('1-B-0-0', '1-B-0-2', '1-B-2-2', '1-B-2-0') //mover esquinas
 
@@ -261,7 +248,7 @@ function lp1() {
 }
 
 
-function u1() {
+function u() {
     moverStickers('1-R-1-0', '1-R-2-1', '1-R-1-2', '1-R-0-1') //mover aristas
     moverStickers('1-R-2-0', '1-R-2-2', '1-R-0-2', '1-R-0-0') //mover esquinas
 
@@ -272,7 +259,7 @@ function u1() {
     espejoU()
 }
 
-function up1() {
+function up() {
     moverStickers('1-R-0-1', '1-R-1-2', '1-R-2-1', '1-R-1-0') //mover aristas
     moverStickers('1-R-0-0', '1-R-0-2', '1-R-2-2', '1-R-2-0') //mover esquinas
         
@@ -283,7 +270,7 @@ function up1() {
     espejoU()
 }
 
-function d1() {
+function d() {
     moverStickers('1-O-0-1', '1-O-1-0', '1-O-2-1', '1-O-1-2') //mover aristas
     moverStickers('1-O-0-0', '1-O-2-0', '1-O-2-2', '1-O-0-2') //mover esquinas
 
@@ -294,7 +281,7 @@ function d1() {
     espejoD()
 }
 
-function dp1() {
+function dp() {
     moverStickers('1-O-1-2', '1-O-2-1', '1-O-1-0', '1-O-0-1') //mover aristas
     moverStickers('1-O-0-2', '1-O-2-2', '1-O-2-0', '1-O-0-0') //mover esquinas
 
@@ -306,7 +293,7 @@ function dp1() {
 }
 
 
-function f1(){
+function f(){
     moverStickers('1-W-1-0', '1-W-2-1', '1-W-1-2', '1-W-0-1') //mover aristas
     moverStickers('1-W-2-0', '1-W-2-2', '1-W-0-2', '1-W-0-0') //mover esquinas
 
@@ -317,7 +304,7 @@ function f1(){
     espejoF()
 }
 
-function fp1() {
+function fp() {
     moverStickers('1-W-0-1', '1-W-1-2', '1-W-2-1', '1-W-1-0') //mover aristas
     moverStickers('1-W-0-0', '1-W-0-2', '1-W-2-2', '1-W-2-0') //mover esquinas
 
@@ -329,7 +316,7 @@ function fp1() {
 }
 
 
-function b1() {
+function b() {
     moverStickers('1-Y-1-0', '1-Y-2-1', '1-Y-1-2', '1-Y-0-1') //mover aristas
     moverStickers('1-Y-2-0', '1-Y-2-2', '1-Y-0-2', '1-Y-0-0') //mover esquinas
 
@@ -340,7 +327,7 @@ function b1() {
     espejoB()
 }
 
-function bp1() {
+function bp() {
     moverStickers('1-Y-0-1', '1-Y-1-2', '1-Y-2-1', '1-Y-1-0') //mover aristas
     moverStickers('1-Y-0-0', '1-Y-0-2', '1-Y-2-2', '1-Y-2-0') //mover esquinas
 
@@ -352,22 +339,17 @@ function bp1() {
 }
 
 function caraEspejo(coor1, coor2, coor3, coor4, rooc1, rooc2, rooc3, rooc4) {
-        const c1 = document.getElementById(coor1);  const e1 = document.getElementById(rooc1);
-        const c2 = document.getElementById(coor2);  const e2 = document.getElementById(rooc2);
-        const c3 = document.getElementById(coor3);  const e3 = document.getElementById(rooc3);
-        const c4 = document.getElementById(coor4);  const e4 = document.getElementById(rooc4);
 
-        e1.removeAttribute('data-color')
-        e1.setAttribute('data-color', c1.getAttribute('data-color'));
+        let c = [[coor1, coor2, coor3, coor4],[rooc1, rooc2, rooc3, rooc4]];
 
-        e2.removeAttribute('data-color')
-        e2.setAttribute('data-color', c2.getAttribute('data-color'));
+        for (let i = 0; i < c[0].length; i++) {
 
-        e3.removeAttribute('data-color')
-        e3.setAttribute('data-color', c3.getAttribute('data-color'));
+            var c1 = document.getElementById(c[0][i]);
+            var e1 = document.getElementById(c[1][i]);
 
-        e4.removeAttribute('data-color')
-        e4.setAttribute('data-color', c4.getAttribute('data-color'));
+            e1.removeAttribute('data-color')
+            e1.setAttribute('data-color', c1.getAttribute('data-color'));
+        }
     }
 
 function espejoM() {
