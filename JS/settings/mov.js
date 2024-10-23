@@ -169,12 +169,16 @@ function m1(){
     moverStickers('1-O-1-1', '1-W-1-1', '1-R-1-1', '1-Y-1-1') //mover centros
     moverStickers('1-O-0-1', '1-W-0-1', '1-R-0-1', '1-Y-0-1') //mover aristas
     moverStickers('1-O-2-1', '1-W-2-1', '1-R-2-1', '1-Y-2-1') //mover aristas
+
+    espejoM()
 }
 
 function mp1() {
     moverStickers('1-Y-1-1', '1-R-1-1', '1-W-1-1', '1-O-1-1') //mover centros
     moverStickers('1-Y-0-1', '1-R-0-1', '1-W-0-1', '1-O-0-1') //mover aristas
     moverStickers('1-Y-2-1', '1-R-2-1', '1-W-2-1', '1-O-2-1') //mover aristas
+
+    espejoM()
 }
 
 
@@ -182,12 +186,16 @@ function e1(){
     moverStickers('1-B-1-1', '1-Y-1-1', '1-G-1-1', '1-W-1-1') //mover centros
     moverStickers('1-B-1-2', '1-Y-1-0', '1-G-1-2', '1-W-1-2') //mover aristas
     moverStickers('1-B-1-0', '1-Y-1-2', '1-G-1-0', '1-W-1-0') //mover aristas
+
+    espejoE()
 }
 
 function ep1(){
     moverStickers('1-W-1-1', '1-G-1-1', '1-Y-1-1', '1-B-1-1') //mover centros
     moverStickers('1-W-1-2', '1-G-1-2', '1-Y-1-0', '1-B-1-2') //mover aristas
     moverStickers('1-W-1-0', '1-G-1-0', '1-Y-1-2', '1-B-1-0') //mover aristas
+
+    espejoE()
 }
 
 
@@ -195,12 +203,16 @@ function s1(){
     moverStickers('1-B-1-1', '1-O-1-1', '1-G-1-1', '1-R-1-1') //mover centros
     moverStickers('1-B-2-1', '1-O-1-2', '1-G-0-1', '1-R-1-0') //mover aristas
     moverStickers('1-B-0-1', '1-O-1-0', '1-G-2-1', '1-R-1-2') //mover aristas
+
+    espejoS()
 }
 
 function sp1(){
     moverStickers('1-R-1-1', '1-G-1-1', '1-O-1-1', '1-B-1-1') //mover centros
     moverStickers('1-R-1-0', '1-G-0-1', '1-O-1-2', '1-B-2-1') //mover aristas
     moverStickers('1-R-1-2', '1-G-2-1', '1-O-1-0', '1-B-0-1') //mover aristas
+
+    espejoS()
 }
 
 
@@ -211,6 +223,8 @@ function r1() {
     moverStickers('1-W-1-2', '1-O-1-2', '1-Y-1-2', '1-R-1-2') //mover aristas
     moverStickers('1-O-0-2', '1-Y-0-2', '1-R-0-2', '1-W-0-2') //mover esquinas
     moverStickers('1-Y-2-2', '1-R-2-2', '1-W-2-2', '1-O-2-2') //mover esquinas
+
+    espejoR()
 }
 
 function rp1() {
@@ -220,6 +234,8 @@ function rp1() {
     moverStickers('1-R-1-2', '1-Y-1-2', '1-O-1-2', '1-W-1-2') //mover aristas
     moverStickers('1-W-0-2', '1-R-0-2', '1-Y-0-2', '1-O-0-2') //mover esquinas
     moverStickers('1-R-2-2', '1-Y-2-2', '1-O-2-2', '1-W-2-2') //mover esquinas
+
+    espejoR()
 }
 
 function l1() {
@@ -229,6 +245,8 @@ function l1() {
     moverStickers('1-Y-1-0', '1-O-1-0', '1-W-1-0', '1-R-1-0') //mover aristas
     moverStickers('1-W-2-0', '1-R-2-0', '1-Y-2-0', '1-O-2-0') //mover esquinas
     moverStickers('1-O-0-0', '1-W-0-0', '1-R-0-0', '1-Y-0-0') //mover esquinas
+
+    espejoL()
 }
 
 function lp1() {
@@ -238,6 +256,8 @@ function lp1() {
     moverStickers('1-R-1-0', '1-W-1-0', '1-O-1-0', '1-Y-1-0') //mover aristas
     moverStickers('1-O-2-0', '1-Y-2-0', '1-R-2-0', '1-W-2-0') //mover esquinas
     moverStickers('1-R-0-0', '1-W-0-0', '1-O-0-0', '1-Y-0-0') //mover esquinas
+
+    espejoL()
 }
 
 
@@ -248,6 +268,8 @@ function u1() {
     moverStickers('1-B-0-1', '1-W-0-1', '1-G-0-1', '1-Y-2-1') //mover aristas
     moverStickers('1-W-0-0', '1-G-0-0', '1-Y-2-2', '1-B-0-0') //mover esquinas
     moverStickers('1-B-0-2', '1-W-0-2', '1-G-0-2', '1-Y-2-0') //mover esquinas
+
+    espejoU()
 }
 
 function up1() {
@@ -257,6 +279,8 @@ function up1() {
     moverStickers('1-Y-2-1', '1-G-0-1', '1-W-0-1', '1-B-0-1') //mover aristas
     moverStickers('1-B-0-0', '1-Y-2-2', '1-G-0-0', '1-W-0-0') //mover esquinas
     moverStickers('1-Y-2-0', '1-G-0-2', '1-W-0-2', '1-B-0-2') //mover esquinas 
+
+    espejoU()
 }
 
 function d1() {
@@ -266,6 +290,8 @@ function d1() {
     moverStickers('1-W-2-1', '1-B-2-1', '1-Y-0-1', '1-G-2-1') //mover aristas
     moverStickers('1-B-2-2', '1-Y-0-0', '1-G-2-2', '1-W-2-2') //mover esquinas
     moverStickers('1-W-2-0', '1-B-2-0', '1-Y-0-2', '1-G-2-0') //mover esquinas
+
+    espejoD()
 }
 
 function dp1() {
@@ -275,6 +301,8 @@ function dp1() {
     moverStickers('1-G-2-1', '1-Y-0-1', '1-B-2-1', '1-W-2-1') //mover aristas
     moverStickers('1-W-2-2', '1-G-2-2', '1-Y-0-0', '1-B-2-2') //mover esquinas
     moverStickers('1-G-2-0', '1-Y-0-2', '1-B-2-0', '1-W-2-0') //mover esquinas
+
+    espejoD()
 }
 
 
@@ -285,6 +313,8 @@ function f1(){
     moverStickers('1-B-1-2', '1-O-0-1', '1-G-1-0', '1-R-2-1') //mover aristas
     moverStickers('1-O-0-0', '1-G-2-0', '1-R-2-2', '1-B-0-2') //mover esquinas
     moverStickers('1-B-2-2', '1-O-0-2', '1-G-0-0', '1-R-2-0') //mover esquinas
+
+    espejoF()
 }
 
 function fp1() {
@@ -294,6 +324,8 @@ function fp1() {
     moverStickers('1-R-2-1', '1-G-1-0', '1-O-0-1', '1-B-1-2') //mover aristas
     moverStickers('1-B-0-2', '1-R-2-2', '1-G-2-0', '1-O-0-0') //mover esquinas
     moverStickers('1-R-2-0', '1-G-0-0', '1-O-0-2', '1-B-2-2') //mover esquinas
+
+    espejoF()
 }
 
 
@@ -304,6 +336,8 @@ function b1() {
     moverStickers('1-B-1-0', '1-R-0-1', '1-G-1-2', '1-O-2-1') //mover aristas
     moverStickers('1-R-0-0', '1-G-0-2', '1-O-2-2', '1-B-2-0') //mover esquinas
     moverStickers('1-B-0-0', '1-R-0-2', '1-G-2-2', '1-O-2-0') //mover esquinas
+
+    espejoB()
 }
 
 function bp1() {
@@ -313,4 +347,98 @@ function bp1() {
     moverStickers('1-O-2-1', '1-G-1-2', '1-R-0-1', '1-B-1-0') //mover aristas
     moverStickers('1-B-2-0', '1-O-2-2', '1-G-0-2', '1-R-0-0') //mover esquinas
     moverStickers('1-O-2-0', '1-G-2-2', '1-R-0-2', '1-B-0-0') //mover esquinas
+
+    espejoB()
 }
+
+function caraEspejo(coor1, coor2, coor3, coor4, rooc1, rooc2, rooc3, rooc4) {
+        const c1 = document.getElementById(coor1);  const e1 = document.getElementById(rooc1);
+        const c2 = document.getElementById(coor2);  const e2 = document.getElementById(rooc2);
+        const c3 = document.getElementById(coor3);  const e3 = document.getElementById(rooc3);
+        const c4 = document.getElementById(coor4);  const e4 = document.getElementById(rooc4);
+
+        e1.removeAttribute('data-color')
+        e1.setAttribute('data-color', c1.getAttribute('data-color'));
+
+        e2.removeAttribute('data-color')
+        e2.setAttribute('data-color', c2.getAttribute('data-color'));
+
+        e3.removeAttribute('data-color')
+        e3.setAttribute('data-color', c3.getAttribute('data-color'));
+
+        e4.removeAttribute('data-color')
+        e4.setAttribute('data-color', c4.getAttribute('data-color'));
+    }
+
+function espejoM() {
+    caraEspejo('1-O-1-1', '1-W-1-1', '1-R-1-1', '1-Y-1-1',      '5-O-1-1', '4-W-1-1', '3-R-1-1', '2-Y-1-1')
+    caraEspejo('1-O-0-1', '1-W-0-1', '1-R-0-1', '1-Y-0-1',      '5-O-2-1', '4-W-2-1', '3-R-2-1', '2-Y-2-1')
+    caraEspejo('1-O-2-1', '1-W-2-1', '1-R-2-1', '1-Y-2-1',      '5-O-0-1', '4-W-0-1', '3-R-0-1', '2-Y-0-1')
+}
+
+function espejoE() {
+    caraEspejo('1-B-1-1', '1-Y-1-1', '1-G-1-1', '1-W-1-1',      '7-B-1-1', '2-Y-1-1', '6-G-1-1', '4-W-1-1')
+    caraEspejo('1-B-1-0', '1-Y-1-2', '1-G-1-0', '1-W-1-0',      '7-B-1-2', '2-Y-1-2', '6-G-1-2', '4-W-1-0')
+    caraEspejo('1-B-1-2', '1-Y-1-0', '1-G-1-2', '1-W-1-2',      '7-B-1-0', '2-Y-1-0', '6-G-1-0', '4-W-1-2')
+}
+
+function espejoS() {
+    caraEspejo('1-B-1-1', '1-O-1-1', '1-G-1-1', '1-R-1-1',      '7-B-1-1', '5-O-1-1', '6-G-1-1', '3-R-1-1')
+    caraEspejo('1-B-0-1', '1-O-1-0', '1-G-2-1', '1-R-1-2',      '7-B-0-1', '5-O-1-0', '6-G-2-1', '3-R-1-2')
+    caraEspejo('1-B-2-1', '1-O-1-2', '1-G-0-1', '1-R-1-0',      '7-B-2-1', '5-O-1-2', '6-G-0-1', '3-R-1-0')
+}
+
+function espejoR() {
+    caraEspejo('1-G-1-0', '1-G-2-1', '1-G-1-2', '1-G-0-1',      '6-G-1-2', '6-G-2-1', '6-G-1-0', '6-G-0-1')
+    caraEspejo('1-G-2-0', '1-G-2-2', '1-G-0-2', '1-G-0-0',      '6-G-2-2', '6-G-2-0', '6-G-0-0', '6-G-0-2')
+
+    caraEspejo('1-W-1-2', '1-O-1-2', '1-Y-1-2', '1-R-1-2',      '4-W-1-2', '5-O-1-2', '2-Y-1-2', '3-R-1-2')
+    caraEspejo('1-W-0-2', '1-O-0-2', '1-Y-0-2', '1-R-0-2',      '4-W-2-2', '5-O-2-2', '2-Y-2-2', '3-R-2-2')
+    caraEspejo('1-W-2-2', '1-O-2-2', '1-Y-2-2', '1-R-2-2',      '4-W-0-2', '5-O-0-2', '2-Y-0-2', '3-R-0-2')
+}
+
+function espejoL() {
+    caraEspejo('1-B-1-0', '1-B-2-1', '1-B-1-2', '1-B-0-1',      '7-B-1-2', '7-B-2-1', '7-B-1-0', '7-B-0-1')
+    caraEspejo('1-B-2-0', '1-B-2-2', '1-B-0-2', '1-B-0-0',      '7-B-2-2', '7-B-2-0', '7-B-0-0', '7-B-0-2')
+
+    caraEspejo('1-Y-1-0', '1-O-1-0', '1-W-1-0', '1-R-1-0',      '2-Y-1-0', '5-O-1-0', '4-W-1-0', '3-R-1-0')
+    caraEspejo('1-Y-0-0', '1-O-0-0', '1-W-0-0', '1-R-0-0',      '2-Y-2-0', '5-O-2-0', '4-W-2-0', '3-R-2-0')
+    caraEspejo('1-Y-2-0', '1-O-2-0', '1-W-2-0', '1-R-2-0',      '2-Y-0-0', '5-O-0-0', '4-W-0-0', '3-R-0-0')
+}
+
+function espejoU() {
+    caraEspejo('1-R-1-0', '1-R-2-1', '1-R-1-2', '1-R-0-1',      '3-R-1-0', '3-R-0-1', '3-R-1-2', '3-R-2-1')
+    caraEspejo('1-R-2-0', '1-R-2-2', '1-R-0-2', '1-R-0-0',      '3-R-0-0', '3-R-0-2', '3-R-2-2', '3-R-2-0')
+
+    caraEspejo('1-B-0-1', '1-W-0-1', '1-G-0-1', '1-Y-2-1',      '7-B-0-1', '4-W-2-1', '6-G-0-1', '2-Y-0-1')
+    caraEspejo('1-B-0-0', '1-W-0-0', '1-G-0-0', '1-Y-2-2',      '7-B-0-2', '4-W-2-0', '6-G-0-2', '2-Y-0-2')
+    caraEspejo('1-B-0-2', '1-W-0-2', '1-G-0-2', '1-Y-2-0',      '7-B-0-0', '4-W-2-2', '6-G-0-0', '2-Y-0-0')
+}
+
+function espejoD() {
+    caraEspejo('1-O-0-1', '1-O-1-0', '1-O-2-1', '1-O-1-2',      '5-O-2-1', '5-O-1-0', '5-O-0-1', '5-O-1-2')
+    caraEspejo('1-O-0-0', '1-O-2-0', '1-O-2-2', '1-O-0-2',      '5-O-2-0', '5-O-0-0', '5-O-0-2', '5-O-2-2')
+
+    caraEspejo('1-W-2-1', '1-B-2-1', '1-Y-0-1', '1-G-2-1',      '4-W-0-1', '7-B-2-1', '2-Y-2-1', '6-G-2-1')
+    caraEspejo('1-W-2-2', '1-B-2-2', '1-Y-0-0', '1-G-2-2',      '4-W-0-2', '7-B-2-0', '2-Y-2-0', '6-G-2-0')
+    caraEspejo('1-W-2-0', '1-B-2-0', '1-Y-0-2', '1-G-2-0',      '4-W-0-0', '7-B-2-2', '2-Y-2-2', '6-G-2-2')
+}
+
+function espejoF() {
+    caraEspejo('1-W-1-0', '1-W-2-1', '1-W-1-2', '1-W-0-1',      '4-W-1-0', '4-W-0-1', '4-W-1-2', '4-W-2-1')
+    caraEspejo('1-W-2-0', '1-W-2-2', '1-W-0-2', '1-W-0-0',      '4-W-0-0', '4-W-0-2', '4-W-2-2', '4-W-2-0')
+
+    caraEspejo('1-B-1-2', '1-O-0-1', '1-G-1-0', '1-R-2-1',      '7-B-1-0', '5-O-2-1', '6-G-1-2', '3-R-0-1')
+    caraEspejo('1-B-0-2', '1-O-0-0', '1-G-2-0', '1-R-2-2',      '7-B-0-0', '5-O-2-0', '6-G-2-2', '3-R-0-2')
+    caraEspejo('1-B-2-2', '1-O-0-2', '1-G-0-0', '1-R-2-0',      '7-B-2-0', '5-O-2-2', '6-G-0-2', '3-R-0-0')
+}
+
+function espejoB() {
+    caraEspejo('1-Y-1-0', '1-Y-2-1', '1-Y-1-2', '1-Y-0-1',      '2-Y-1-0', '2-Y-0-1', '2-Y-1-2', '2-Y-2-1')
+    caraEspejo('1-Y-2-0', '1-Y-2-2', '1-Y-0-2', '1-Y-0-0',      '2-Y-0-0', '2-Y-0-2', '2-Y-2-2', '2-Y-2-0')
+
+    caraEspejo('1-B-1-0', '1-R-0-1', '1-G-1-2', '1-O-2-1',      '7-B-1-2', '3-R-2-1', '6-G-1-0', '5-O-0-1')
+    caraEspejo('1-B-2-0', '1-R-0-0', '1-G-0-2', '1-O-2-2',      '7-B-2-2', '3-R-2-0', '6-G-0-0', '5-O-0-2')
+    caraEspejo('1-B-0-0', '1-R-0-2', '1-G-2-2', '1-O-2-0',      '7-B-0-2', '3-R-2-2', '6-G-2-0', '5-O-0-0')
+}
+
