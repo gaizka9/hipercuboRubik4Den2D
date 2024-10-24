@@ -105,47 +105,6 @@ if (visibilidad1 === "visible") {
                 b()
             }
         }
-
-        ///////////////////  ORIENTACION  ////////////////////////
-
-        if ((event.shiftKey && event.ctrlKey && (event.key === 'x' || event.key === 'X')) || (event.ctrlKey && (event.key === 'x' || event.key === 'X'))) {
-
-            console.log("hiper eje X")
-
-        }else if (event.shiftKey && (event.key === 'x' || event.key === 'X')) { 
-
-            m(); rp(); l();
-
-        }else if (event.key === 'x' || event.key === 'X') { 
-            
-            mp(); r(); lp();
-        }
-
-        if ((event.shiftKey && event.ctrlKey && (event.key === 'y' || event.key === 'Y')) || (event.ctrlKey && (event.key === 'y' || event.key === 'Y'))) {
-
-            console.log("hiper eje Y")
-
-        }else if (event.shiftKey && (event.key === 'y' || event.key === 'Y')) { 
-            
-            e(); up(); d();
-
-        }else if (event.key === 'y' || event.key === 'Y') { 
-            
-            ep(); u(); dp();
-        }
-
-        if ((event.shiftKey && event.ctrlKey && (event.key === 'z' || event.key === 'Z')) || (event.ctrlKey && (event.key === 'z' || event.key === 'Z'))) {
-
-            console.log("hiper eje Z")
-
-        }else if (event.shiftKey && (event.key === 'z' || event.key === 'Z')) { 
-            
-            sp(); fp(); b();
-            
-        }else if (event.key === 'z' || event.key === 'Z') { 
-            
-            s(); f(); bp();
-        }
     });
 
 }else{
@@ -423,4 +382,3 @@ function espejoB() {
     caraEspejo('1-B-2-0', '1-R-0-0', '1-G-0-2', '1-O-2-2',      '7-B-2-2', '3-R-2-0', '6-G-0-0', '5-O-0-2')
     caraEspejo('1-B-0-0', '1-R-0-2', '1-G-2-2', '1-O-2-0',      '7-B-0-2', '3-R-2-2', '6-G-2-0', '5-O-0-0')
 }
-
